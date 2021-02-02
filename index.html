@@ -1,0 +1,187 @@
+<html land="en">
+    <header>
+
+    </header>
+
+    <link rel="stylesheet" type="text/css" href="css/survey_page_css.css"</link>
+      <body>
+
+        <img src="photos/bts-long.jpg" alt="bts-wallpaper" id="image" class="btswallpaper">
+
+        <h1 id="title" class="text-center">BTS's Worldwide Fan Survey Page</h1>
+        <p id="description" class="text-center">
+          The goal of this survey is to learn more about BTS's fans
+        </p>
+        <form id="survey-form">
+
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Please enter your Email"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue"></label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="0"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="School student">School student</option>
+        <option value="University student">University student</option>
+        <option value="Full time job">Full Time Job</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <div class="form-group">
+      <p>How much would you spend on BTS goods?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />From $0 to $50</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />From $50 to 100</label
+      >
+
+      <label>
+        <input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />More than $100</label
+      >
+    </div>
+    <div class="form-group">
+      <p>
+        Have you ever been to a BTS concert?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="challenges">Yes</option>
+        <option value="projects">Not yet</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Who is your favorite BTS member?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />V</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="back-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />J-Hope</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="data-visualization"
+          type="checkbox"
+          class="input-checkbox"
+        />Suga</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="challenges"
+          type="checkbox"
+          class="input-checkbox"
+        />Jimin</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />Jin</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="gitter-help-rooms"
+          type="checkbox"
+          class="input-checkbox"
+        />RM</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="videos"
+          type="checkbox"
+          class="input-checkbox"
+        />JungKook</label
+      >
+    </div>
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+
+          </form>
+      </body>
+</html>
